@@ -24,7 +24,8 @@ async function establecerConexion() {
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      useCreateIndex: true
+      useCreateIndex: true,
+      useFindAndModify: false
     },
     (err, resp) => {
       if (err) throw err;
